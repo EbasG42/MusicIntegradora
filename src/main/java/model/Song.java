@@ -7,17 +7,6 @@ public class Song extends Audio implements Sellable {
 
     private Genre genre;
 
-    /**
-     * <b>Constructor</b> allows to create a Song's object.
-     * 
-     * @param name     is the song's name.
-     * @param duration is the song's duration.
-     * @param url      is the song's url.
-     * @param autor    is the song's autor.
-     * @param album    is the song's album.
-     * @param price    is the song's price.
-     * @param genre    is the song's genre.
-     */
     public Song(String name, int duration, String url, User autor, String album, double price, int genre) {
         super(name, duration, url, autor);
         this.album = album;

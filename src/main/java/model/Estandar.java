@@ -2,20 +2,11 @@ package model;
 import java.util.Random;
 public class Estandar extends Consumer {
 
-    // private Audio[] audios;
-    // private Playlist[] playlists;
     public static final int MAX_AUDIOS = 100;
     public static final int MAX_PLAYLISTS = 20;
     public static Random random = new Random();
     private int currentPlaybacks;
 
-    /**
-     * <b>Constructor</b><br>
-     *  allows to create a Consumer's object.
-     * 
-     * @param nick is the user's nick.
-     * @param id is the user's identification number.
-     */
     public Estandar(String nick, String id) {
         super(nick, id);
         currentPlaybacks = 0;

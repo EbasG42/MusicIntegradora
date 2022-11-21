@@ -4,16 +4,6 @@ public class Podcast extends Audio implements Playable {
     private String description;
     private Category category;
 
-    /**
-     * <b>Constructor</b> allows to create a Podcast's object.
-     * 
-     * @param name        is the podcast's name.
-     * @param duration    is the podcast's duration.
-     * @param url         is the podcast's url.
-     * @param autor       is the podcast's autor.
-     * @param description is the podcast's description.
-     * @param category    is the podcast's category.
-     */
     public Podcast(String name, int duration, String url, User autor, String description, int category) {
         super(name, duration, url, autor);
         this.description = description;

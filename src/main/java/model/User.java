@@ -6,12 +6,6 @@ public abstract class User {
     private String id;
     private LocalDate vincDate;
 
-    /**
-     * <b>Constructor</b> allows to create an User's object.
-     * 
-     * @param nick is the user's nick.
-     * @param id is the user's identification number.
-     */
     public User(String nick, String id) {
 
         this.nick = nick;

@@ -1,12 +1,12 @@
 package model;
 import java.util.ArrayList;
 import java.util.Random;
-public class NeoTunesController {
+public class Controller {
 
     /**
      * A global variable that allows to create random numbers
      */
-    public static Random rd = new Random();
+    public static Random ran = new Random();
 
     private String name;
 
@@ -14,12 +14,12 @@ public class NeoTunesController {
     private ArrayList<Audio> audios;
 
     /**
-     * <b>NeoTunesController</b><br>
+     * <b>Controller</b><br>
      * This method is the constructor of the class
      * 
      * @param name This is the name of the program
      */
-    public NeoTunesController(String name) {
+    public Controller(String name) {
 
         this.name = name;
         users = new ArrayList<User>();
@@ -65,7 +65,7 @@ public class NeoTunesController {
      * 
      * @param nick This is the nick of the user.
      * @param id This is the id of the user.
-     * @param type     This is the type of user: premium or standard
+     * @param type     This is the type of user: premium or standaran
      * @return String This returns a message that indicates if the user was added or
      *         not
      */
@@ -329,7 +329,7 @@ public class NeoTunesController {
      */
     public String showAd() {
         String msg = "";
-        int ad = rd.nextInt(3);
+        int ad = ran.nextInt(3);
         switch (ad) {
             case 0:
                 msg = Advertisement.COKE.plays();
@@ -874,7 +874,7 @@ public class NeoTunesController {
             }
         }
         if (count > 0) {
-            msg = "The genre " + genre + " has been listened to " + count + " times";
+            msg = "The genre " + genre + " has been listened " + count + " times";
         }
         return msg;
     }

@@ -6,12 +6,6 @@ public abstract class Consumer extends User {
     private ArrayList<Shop> shops;
     private ArrayList<Playback> playbacks;
 
-    /**
-     * <b>Constructor</b> allows to create a Consumer's object.
-     * 
-     * @param nick is the user's nick.
-     * @param id is the user's identification number.
-     */
     public Consumer(String nick, String id) {
         super(nick, id);
         playlists = new ArrayList<Playlist>();

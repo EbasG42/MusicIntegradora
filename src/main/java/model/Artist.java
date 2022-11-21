@@ -4,14 +4,6 @@ public class Artist extends Productor {
 
     private ArrayList<Song> songs;
 
-    /**
-     * <b>Constructor</b> allows to create an Artist's object.
-     * 
-     * @param nick is the user's nick.
-     * @param id is the user's identification number.
-     * @param name     is the artist's name.
-     * @param url      is the artist's url.
-     */
     public Artist(String nick, String id, String name, String url) {
         super(nick, id, name, url);
         songs = new ArrayList<Song>();

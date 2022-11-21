@@ -1,11 +1,11 @@
 package ui;
-import model.NeoTunesController;
+import model.Controller;
 import java.util.Scanner;
 public class NeoTunesApp {
     public static Scanner scanner = new Scanner(System.in);
-    private NeoTunesController control;
+    private Controller control;
     public NeoTunesApp() {
-        control = new NeoTunesController("NeoTunes");
+        control = new Controller("NeoTunes");
     }
     public static void main(String[] args) {
 
@@ -23,8 +23,8 @@ public class NeoTunesApp {
                            6.Play a song or a podcast
                            7.Buy a song
                            8.To Show the total playback for audio type.
-                           9.To Show the most heard song genre
-                           10.To Show the most heard podcast category
+                           9.To Show the most hearan song genre
+                           10.To Show the most hearan podcast category
                            11.To Show the top 5 artists or producer
                            12.To Show the top 5 podcast or songs
                            13.To Show the total sales for all the genres
@@ -73,7 +73,7 @@ public class NeoTunesApp {
     }
     /**
      * <b>addUser</b><br>
-     * reads the info and call the controller to add an user to the application.<br>
+     * reads the info and call the controller to add an user to the app.<br>
      */
     public void addUser() {
         System.out.print("Please input the user's nick : ");
@@ -106,7 +106,7 @@ public class NeoTunesApp {
             System.out.println(control.addUser(nick, id, producerName, producerUrl, option));
         } else {
             do {
-                System.out.print("Select the Consumer's type:\n1. Premium\n2. Standard :\n ");
+                System.out.print("Select the Consumer's type:\n1. Premium\n2. Standaran :\n ");
                 option = scanner.nextInt();
                 scanner.nextLine();
                 if (option != 1 && option != 2) {
@@ -120,7 +120,7 @@ public class NeoTunesApp {
     /**
      * <b>addAudio</b><br>
      * reads the info and call the controller to add an audio to the
-     * application.<br>
+     * app.<br>
      */
     public void addAudio() {
         System.out.print("Input the audio's name : ");
@@ -229,10 +229,9 @@ public class NeoTunesApp {
     /**
      * <b>createPlaylist</b><br>
      * reads the info and call the controller to add a playlist to the
-     * application.<br>
+     * app.<br>
      */
     public void createPlaylist() {
-        System.out.println("\n-Playlist creation-");
         System.out.print("Enter the playlist's name : ");
         scanner.nextLine();
         String playlistName = scanner.nextLine();
@@ -243,7 +242,7 @@ public class NeoTunesApp {
 
     /**
      * <b>editToPlaylist</b><br>
-     * reads the info and call the controller to change some data of a playlist.<br>
+     * reads the info and call the controller to change data of a playlist.<br>
      */
     public void editPlaylist() {
         System.out.print("Enter the playlist's name : ");
@@ -327,7 +326,7 @@ public class NeoTunesApp {
     /**
      * <b>showTotalPlayback</b><br>
      * reads the info and call the controller to show the total playback of all
-     * audios according to it's type.<br>
+     * audios accoraning to it's type.<br>
      */
     public void showTotalPlayback() {
         int option;
@@ -373,8 +372,8 @@ public class NeoTunesApp {
 
     /**
      * <b>showMostHearedCategory</b><br>
-     * reads the info and call the controller to show the most heared category of
-     * all the app and for a single user.<br>
+     * reads the info and call the controller to show the most heared category 
+     * all the app or a single user.<br>
      */
     public void showMostHearedCategory() {
         int option;

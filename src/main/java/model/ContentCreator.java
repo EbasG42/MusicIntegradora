@@ -3,15 +3,7 @@ import java.util.ArrayList;
 public class ContentCreator extends Productor {
 
     private ArrayList<Podcast> podcasts;
-
-    /**
-     * <b>Constructor</b> allows to create a ContentCreator's object.
-     * 
-     * @param nick is the user's nick.
-     * @param id is the user's identification number.
-     * @param name     is the productor's name.
-     * @param url      is the productor's url.
-     */
+    
     public ContentCreator(String nick, String id, String name, String url) {
         super(nick, id, name, url);
         podcasts = new ArrayList<Podcast>();

@@ -1,0 +1,68 @@
+@options
+@packages
+@argfile
+-encoding
+'UTF-8'
+-protected
+-source
+'18'
+-sourcepath
+'C:/Users/Sebastian/OneDrive/Documentos/NetBeansProjects/MusicIntegradora/src/main/java'
+-author
+-bottom
+'Copyright &#169; 2022. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'C:/Users/Sebastian/OneDrive/Documentos/NetBeansProjects/MusicIntegradora/target/site/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'MusicIntegradora 1.0-SNAPSHOT API'
+-use
+-version
+-windowtitle
+'MusicIntegradora 1.0-SNAPSHOT API'
+model
+ui
+'C:/Users/Sebastian/OneDrive/Documentos/NetBeansProjects/MusicIntegradora/src/main/java/model/Advertisement.java'
+'C:/Users/Sebastian/OneDrive/Documentos/NetBeansProjects/MusicIntegradora/src/main/java/model/Artist.java'
+'C:/Users/Sebastian/OneDrive/Documentos/NetBeansProjects/MusicIntegradora/src/main/java/model/Audio.java'
+'C:/Users/Sebastian/OneDrive/Documentos/NetBeansProjects/MusicIntegradora/src/main/java/model/Category.java'
+'C:/Users/Sebastian/OneDrive/Documentos/NetBeansProjects/MusicIntegradora/src/main/java/model/Consumer.java'
+'C:/Users/Sebastian/OneDrive/Documentos/NetBeansProjects/MusicIntegradora/src/main/java/model/ContentCreator.java'
+'C:/Users/Sebastian/OneDrive/Documentos/NetBeansProjects/MusicIntegradora/src/main/java/model/Controller.java'
+'C:/Users/Sebastian/OneDrive/Documentos/NetBeansProjects/MusicIntegradora/src/main/java/model/Estandar.java'
+'C:/Users/Sebastian/OneDrive/Documentos/NetBeansProjects/MusicIntegradora/src/main/java/model/Genre.java'
+'C:/Users/Sebastian/OneDrive/Documentos/NetBeansProjects/MusicIntegradora/src/main/java/model/Playable.java'
+'C:/Users/Sebastian/OneDrive/Documentos/NetBeansProjects/MusicIntegradora/src/main/java/model/Playback.java'
+'C:/Users/Sebastian/OneDrive/Documentos/NetBeansProjects/MusicIntegradora/src/main/java/model/Playlist.java'
+'C:/Users/Sebastian/OneDrive/Documentos/NetBeansProjects/MusicIntegradora/src/main/java/model/PlayListType.java'
+'C:/Users/Sebastian/OneDrive/Documentos/NetBeansProjects/MusicIntegradora/src/main/java/model/Podcast.java'
+'C:/Users/Sebastian/OneDrive/Documentos/NetBeansProjects/MusicIntegradora/src/main/java/model/Premium.java'
+'C:/Users/Sebastian/OneDrive/Documentos/NetBeansProjects/MusicIntegradora/src/main/java/model/Productor.java'
+'C:/Users/Sebastian/OneDrive/Documentos/NetBeansProjects/MusicIntegradora/src/main/java/model/Sellable.java'
+'C:/Users/Sebastian/OneDrive/Documentos/NetBeansProjects/MusicIntegradora/src/main/java/model/Shop.java'
+'C:/Users/Sebastian/OneDrive/Documentos/NetBeansProjects/MusicIntegradora/src/main/java/model/Song.java'
+'C:/Users/Sebastian/OneDrive/Documentos/NetBeansProjects/MusicIntegradora/src/main/java/model/User.java'
+'C:/Users/Sebastian/OneDrive/Documentos/NetBeansProjects/MusicIntegradora/src/main/java/ui/NeoTunesApp.java'
+C:\Users\Sebastian\OneDrive\Documentos\NetBeansProjects\MusicIntegradora\src\main\java = 1668746898850
+C:\Users\Sebastian\OneDrive\Documentos\NetBeansProjects\MusicIntegradora\target\site\apidocs\allclasses-index.html = 1669040621804
+C:\Users\Sebastian\OneDrive\Documentos\NetBeansProjects\MusicIntegradora\target\site\apidocs\allpackages-index.html = 1669040621807
+C:\Users\Sebastian\OneDrive\Documentos\NetBeansProjects\MusicIntegradora\target\site\apidocs\constant-values.html = 1669040621654
+C:\Users\Sebastian\OneDrive\Documentos\NetBeansProjects\MusicIntegradora\target\site\apidocs\copy.svg = 1669040621859
+C:\Users\Sebastian\OneDrive\Documentos\NetBeansProjects\MusicIntegradora\target\site\apidocs\element-list = 1669040621615
+C:\Users\Sebastian\OneDrive\Documentos\NetBeansProjects\MusicIntegradora\target\site\apidocs\help-doc.html = 1669040621852
+C:\Users\Sebastian\OneDrive\Documentos\NetBeansProjects\MusicIntegradora\target\site\apidocs\index-all.html = 1669040621841
+C:\Users\Sebastian\OneDrive\Documentos\NetBeansProjects\MusicIntegradora\target\site\apidocs\index.html = 1669040621777
+C:\Users\Sebastian\OneDrive\Documentos\NetBeansProjects\MusicIntegradora\target\site\apidocs\jquery-ui.overrides.css = 1669040621892
+C:\Users\Sebastian\OneDrive\Documentos\NetBeansProjects\MusicIntegradora\target\site\apidocs\member-search-index.js = 1669040621813
+C:\Users\Sebastian\OneDrive\Documentos\NetBeansProjects\MusicIntegradora\target\site\apidocs\module-search-index.js = 1669040621809
+C:\Users\Sebastian\OneDrive\Documentos\NetBeansProjects\MusicIntegradora\target\site\apidocs\overview-summary.html = 1669040621843
+C:\Users\Sebastian\OneDrive\Documentos\NetBeansProjects\MusicIntegradora\target\site\apidocs\overview-tree.html = 1669040621774
+C:\Users\Sebastian\OneDrive\Documentos\NetBeansProjects\MusicIntegradora\target\site\apidocs\package-search-index.js = 1669040621810
+C:\Users\Sebastian\OneDrive\Documentos\NetBeansProjects\MusicIntegradora\target\site\apidocs\script.js = 1669040621857
+C:\Users\Sebastian\OneDrive\Documentos\NetBeansProjects\MusicIntegradora\target\site\apidocs\search.js = 1669040621862
+C:\Users\Sebastian\OneDrive\Documentos\NetBeansProjects\MusicIntegradora\target\site\apidocs\stylesheet.css = 1669040621855
+C:\Users\Sebastian\OneDrive\Documentos\NetBeansProjects\MusicIntegradora\target\site\apidocs\tag-search-index.js = 1669040621814
+C:\Users\Sebastian\OneDrive\Documentos\NetBeansProjects\MusicIntegradora\target\site\apidocs\type-search-index.js = 1669040621811

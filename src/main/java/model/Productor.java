@@ -6,14 +6,6 @@ public abstract class Productor extends User {
     private int accumPlay;
     private double timePlayed;
 
-    /**
-     * <b>Constructor</b> allows to create a Productor's object.
-     * 
-     * @param nick is the user's nick.
-     * @param id is the user's identification number.
-     * @param name     is the productor's name.
-     * @param url      is the productor's url.
-     */
     public Productor(String nick, String id, String name, String url) {
         super(nick, id);
         this.name = name;

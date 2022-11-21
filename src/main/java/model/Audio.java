@@ -7,14 +7,6 @@ public abstract class Audio implements Playable {
     private int totalPlays;
     private Productor autor;
 
-    /**
-     * <b>Constructor</b> allows to create an Audio's object.
-     * 
-     * @param name     is the audio's name.
-     * @param duration is the audio's duration.
-     * @param url      is the audio's url.
-     * @param autor    is the audio's autor.
-     */
     public Audio(String name, int duration, String url, User autor) {
         this.name = name;
         this.duration = duration;
