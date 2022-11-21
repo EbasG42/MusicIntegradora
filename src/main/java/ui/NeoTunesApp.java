@@ -188,7 +188,6 @@ public class NeoTunesApp {
             do {
                 System.out.println(
                         "Enter the song duration in format hh:mm:ss, please each space with two digits : ");
-                scanner.nextLine();
                 String songDuration = scanner.nextLine();
                 if (songDuration.length() != 8) {
                     System.out.println("Invalid format");
@@ -254,7 +253,7 @@ public class NeoTunesApp {
         String usernick = scanner.nextLine();
         int option;
         do {
-            System.out.println("Select the action to do : \n3. Change playlist's name\n2. Add audio\n3. Remove audio");
+            System.out.println("Select the action to do : \n1. Change playlist's name\n2. Add audio\n3. Remove audio");
             option = scanner.nextInt();
             scanner.nextLine();
             if (option < 1 && option > 3) {
@@ -365,6 +364,7 @@ public class NeoTunesApp {
             System.out.println(control.mostListenedGenre());
         } else {
             System.out.print("Enter the user's nick : ");
+            scanner.nextLine();
             String usernick = scanner.nextLine();
             System.out.println(control.mostListenedGenre(usernick));
         }
@@ -389,6 +389,7 @@ public class NeoTunesApp {
             System.out.println(control.mostListenedCategory());
         } else {
             System.out.print("Enter the user's nick : ");
+            scanner.nextLine();
             String usernick = scanner.nextLine();
             System.out.println(control.mostListenedCategory(usernick));
         }
@@ -420,7 +421,7 @@ public class NeoTunesApp {
         do {
             do {
                 System.out.println(
-                        "Select the genre to show it´s total sales : \n1.Rock\n2. Pop\n3. Trap\4. House\n0.Go back to the main menu");
+                        "Select the genre to show it´s total sales : \n1.Rock\n2. Pop\n3. Trap\n4. House\n0.Go back to the main menu");
                 option = scanner.nextInt();
                 scanner.nextLine();
                 if (option < 0 && option > 4) {
