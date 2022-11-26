@@ -5,7 +5,6 @@ model\Shop.class
 model\Premium.class
 model\Artist.class
 model\Consumer$1.class
-model\NeoTunesController.class
 model\Productor.class
 model\Song.class
 model\Genre.class

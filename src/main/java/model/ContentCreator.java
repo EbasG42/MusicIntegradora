@@ -6,11 +6,11 @@ public class ContentCreator extends Productor {
     
     public ContentCreator(String nick, String id, String name, String url) {
         super(nick, id, name, url);
-        podcasts = new ArrayList<Podcast>();
+        podcasts = new ArrayList<>();
     }
 
     /**
-     * <b>addAudio</b> allows to add a podcast to the user's list of podcasts.
+     * addAudio allows to add a podcast to the user's list of podcasts.
      * 
      * @param audio is the podcast to be added.
      * @return String the message of the operation.
@@ -28,7 +28,7 @@ public class ContentCreator extends Productor {
     }
 
     /**
-     * <b>searchAudio</b> allows to search an audio in the user's list of audios.
+     * searchAudio allows to search an audio in the user's list of audios.
      * 
      * @param name is the name of the audio to be searched.
      * @return Audio the audio found.

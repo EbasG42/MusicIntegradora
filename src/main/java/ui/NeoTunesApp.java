@@ -72,8 +72,8 @@ public class NeoTunesApp {
 
     }
     /**
-     * <b>addUser</b><br>
-     * reads the info and call the controller to add an user to the app.<br>
+     * addUser
+     * reads the info and call the controller to add an user to the app.
      */
     public void addUser() {
         System.out.print("Please input the user's nick : ");
@@ -118,9 +118,9 @@ public class NeoTunesApp {
     }
 
     /**
-     * <b>addAudio</b><br>
+     * addAudio
      * reads the info and call the controller to add an audio to the
-     * app.<br>
+     * app.
      */
     public void addAudio() {
         System.out.print("Input the audio's name : ");
@@ -227,9 +227,9 @@ public class NeoTunesApp {
     }
 
     /**
-     * <b>createPlaylist</b><br>
+     * createPlaylist
      * reads the info and call the controller to add a playlist to the
-     * app.<br>
+     * app.
      */
     public void createPlaylist() {
         System.out.print("Enter the playlist's name : ");
@@ -241,8 +241,8 @@ public class NeoTunesApp {
     }
 
     /**
-     * <b>editToPlaylist</b><br>
-     * reads the info and call the controller to change data of a playlist.<br>
+     * editToPlaylist
+     * reads the info and call the controller to change data of a playlist.
      */
     public void editPlaylist() {
         System.out.print("Enter the playlist's name : ");
@@ -284,9 +284,9 @@ public class NeoTunesApp {
     }
 
     /**
-     * <b>sharePlaylist</b><br>
+     * sharePlaylist
      * reads the info and call the controller to share a playlist with another
-     * user.<br>
+     * user.
      */
     public void sharePlaylist() {
         System.out.print("Enter the playlist's name : ");
@@ -298,8 +298,8 @@ public class NeoTunesApp {
     }
 
     /**
-     * <b>playAudio</b><br>
-     * reads the info and call the controller to simulate the play an audio.<br>
+     * playAudio
+     * reads the info and call the controller to simulate the play an audio.
      */
     public void playAudio() {
         System.out.print("Enter the audio's name : ");
@@ -311,8 +311,8 @@ public class NeoTunesApp {
     }
 
     /**
-     * <b>buyAudio</b><br>
-     * reads the info and call the controller to an audio.<br>
+     * buyAudio
+     * reads the info and call the controller to an audio.
      */
     public void buyAudio() {
         System.out.print("Enter the song's name : ");
@@ -324,9 +324,9 @@ public class NeoTunesApp {
     }
 
     /**
-     * <b>showTotalPlayback</b><br>
+     * showTotalPlayback
      * reads the info and call the controller to show the total playback of all
-     * audios accoraning to it's type.<br>
+     * audios accoraning to it's type.
      */
     public void showTotalPlayback() {
         int option;
@@ -346,9 +346,9 @@ public class NeoTunesApp {
     }
 
     /**
-     * <b>showMostHearedGenre</b><br>
+     * showMostHearedGenre
      * reads the info and call the controller to show the most heared genre of all
-     * the app and for a single user.<br>
+     * the app and for a single user.
      */
     public void showMostHearedGenre() {
         int option;
@@ -371,9 +371,9 @@ public class NeoTunesApp {
     }
 
     /**
-     * <b>showMostHearedCategory</b><br>
+     * showMostHearedCategory
      * reads the info and call the controller to show the most heared category 
-     * all the app or a single user.<br>
+     * all the app or a single user.
      */
     public void showMostHearedCategory() {
         int option;
@@ -395,32 +395,31 @@ public class NeoTunesApp {
     }
 
     /**
-     * <b>showTop5Producers</b><br>
-     * calls the controller to show the top 5 producers of all the app.<br>
+     * showTop5Producers
+     * calls the controller to show the top 5 producers of all the app.
      */
     public void showTop5Producers() {
         System.out.println(control.top5());
     }
 
     /**
-     * <b>showTop10Audios</b><br>
-     * calls the controller to show the top 10 audios of all the app.<br>
+     * showTop10Audios
+     * calls the controller to show the top 10 audios of all the app.
      */
     public void showTop10Audios() {
         System.out.println(control.top10());
     }
 
     /**
-     * <b>showTotalSales</b><br>
+     * showTotalSales
      * Reads the info and calls the controller to show the total sales of all the
-     * app.<br>
+     * app.
      */
     public void showTotalSales() {
         int option;
         do {
             do {
-                System.out.println(
-                        "Select the genre to show it´s total sales : \n1.Rock\n2. Pop\n3. Trap\n4. House\n0.Go back to the main menu");
+                System.out.println("Select the genre to show it´s total sales : \n1.Rock\n2. Pop\n3. Trap\n4. House\n0.Go back to the main menu");
                 option = scanner.nextInt();
                 scanner.nextLine();
                 if (option < 0 && option > 4) {
@@ -449,8 +448,8 @@ public class NeoTunesApp {
     }
 
     /**
-     * <b>showMostSaledSong</b><br>
-     * calls the controller to show the most saled song of all the app.<br>
+     * showMostSaledSong
+     * calls the controller to show the most saled song of all the app.
      */
     public void showMostSaledSong() {
         System.out.println(control.mostSoldSong());

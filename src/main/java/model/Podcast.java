@@ -10,7 +10,7 @@ public class Podcast extends Audio implements Playable {
 
         switch (category) {
             case 1:
-                this.category = Category.POLICY;
+                this.category = Category.POLITICS;
                 break;
             case 2:
                 this.category = Category.ENTERTAINMENT;

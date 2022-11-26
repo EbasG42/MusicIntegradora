@@ -14,7 +14,7 @@ public class Controller {
     private ArrayList<Audio> audios;
 
     /**
-     * <b>Controller</b><br>
+     * Controller
      * This method is the constructor of the class
      * 
      * @param name This is the name of the program
@@ -22,16 +22,16 @@ public class Controller {
     public Controller(String name) {
 
         this.name = name;
-        users = new ArrayList<User>();
-        audios = new ArrayList<Audio>();
+        users = new ArrayList<>();
+        audios = new ArrayList<>();
 
     }
 
     /**
-     * <b>addUser</b><br>
-     * This method adds a producer to the system.<br>
-     * <b>pre:</b> The user must not be in the system<br>
-     * <b>post:</b> The user is added to the system<br>
+     * addUser
+     * This method adds a producer to the system.
+     * pre: The user must not be in the system
+     * post: The user is added to the system
      * 
      * @param nick This is the nick of the user
      * @param id This is the id of the user
@@ -58,10 +58,10 @@ public class Controller {
     }
 
     /**
-     * <b>addUser</b><br>
-     * This method adds a Consumer to the system.<br>
-     * <b>pre:</b> The user must not be in the system<br>
-     * <b>post:</b> The user is added to the system<br>
+     * addUser
+     * This method adds a Consumer to the system.
+     * pre: The user must not be in the system
+     * post: The user is added to the system
      * 
      * @param nick This is the nick of the user.
      * @param id This is the id of the user.
@@ -88,10 +88,10 @@ public class Controller {
     }
 
     /**
-     * <b>addAudio</b><br>
-     * This method adds a song to the system.<br>
-     * <b>pre:</b> The song must not be in the system<br>
-     * <b>post:</b> The song is added to the system<br>
+     * addAudio
+     * This method adds a song to the system.
+     * pre: The song must not be in the system
+     * post: The song is added to the system
      * 
      * @param name     This is the name of the song
      * @param m        This is the duration of the song in minutes
@@ -133,10 +133,10 @@ public class Controller {
     }
 
     /**
-     * <b>addAudio</b><br>
-     * This method adds a podcast to the system.<br>
-     * <b>pre:</b> The podcast must not be in the system<br>
-     * <b>post:</b> The podcast is added to the system<br>
+     * addAudio
+     * This method adds a podcast to the system.
+     * pre: The podcast must not be in the system
+     * post: The podcast is added to the system
      * 
      * @param name        This is the name of the podcast
      * @param h           This is the duration of the podcast in hours
@@ -175,10 +175,10 @@ public class Controller {
     }
 
     /**
-     * <b>addAudioToPlaylist</b><br>
-     * This method adds an audio to a playlist.<br>
-     * <b>pre:</b> The audio must not be in the playlist<br>
-     * <b>post:</b> The audio is added to the playlist<br>
+     * addAudioToPlaylist
+     * This method adds an audio to a playlist.
+     * pre: The audio must not be in the playlist
+     * post: The audio is added to the playlist
      * 
      * @param nameSong     This is the name of the song
      * @param namePlaylist This is the name of the playlist
@@ -206,10 +206,10 @@ public class Controller {
     }
 
     /**
-     * <b>addPlaylistToConsumer</b><br>
-     * This method adds a playlist to a consumer user.<br>
-     * <b>pre:</b> The playlist must not be in the user<br>
-     * <b>post:</b> The playlist is added to the user<br>
+     * addPlaylistToConsumer
+     * This method adds a playlist to a consumer user.
+     * pre: The playlist must not be in the user
+     * post: The playlist is added to the user
      * 
      * @param name     This is the name of the playlist
      * @param nick This is the nick of the user that owns the playlist
@@ -234,10 +234,10 @@ public class Controller {
     }
 
     /**
-     * <b>searchUser</b><br>
-     * This method searches a user in the system.<br>
-     * <b>pre:</b> The user must be in the system<br>
-     * <b>post:</b> The user is searched in the system<br>
+     * searchUser
+     * This method searches a user in the system.
+     * pre: The user must be in the system
+     * post: The user is searched in the system
      * 
      * @param nick This is the nick of the user to search
      * @return User This returns the user if it exists or null if it does not
@@ -255,10 +255,10 @@ public class Controller {
     }
 
     /**
-     * <b>searchAudio</b><br>
-     * This method searches an audio in the system.<br>
-     * <b>pre:</b> The audio must be in the system<br>
-     * <b>post:</b> The audio is searched in the system<br>
+     * searchAudio
+     * This method searches an audio in the system.
+     * pre: The audio must be in the system
+     * post: The audio is searched in the system
      * 
      * @param name This is the name of the audio to search
      * @return Audio This returns the audio if it exists or null if it does not
@@ -276,10 +276,10 @@ public class Controller {
     }
 
     /**
-     * <b>playAudios</b><br>
-     * This method plays an audio.<br>
-     * <b>pre:</b> The audio must be in the system<br>
-     * <b>post:</b> The audio is played<br>
+     * playAudios
+     * This method plays an audio.
+     * pre: The audio must be in the system
+     * post: The audio is played
      * 
      * @param nick   This is the nick of the user that will play the audio
      * @param nameAudios This is the name of the audio to play
@@ -320,10 +320,10 @@ public class Controller {
     }
 
     /**
-     * <b>showAd</b><br>
-     * This method shows an ad.<br>
-     * <b>pre:</b> The ad must be in the system<br>
-     * <b>post:</b> The ad is shown<br>
+     * showAd
+     * This method shows an ad.
+     * pre: The ad must be in the system
+     * post: The ad is shown
      * 
      * @return String This returns a message showing the ad
      */
@@ -345,10 +345,10 @@ public class Controller {
     }
 
     /**
-     * <b>buySong</b><br>
-     * This method buys a song.<br>
-     * <b>pre:</b> The song must be in the system and must not have been sold<br>
-     * <b>post:</b> The song is bought<br>
+     * buySong
+     * This method buys a song.
+     * pre: The song must be in the system and must not have been sold
+     * post: The song is bought
      * 
      * @param nick   Is the nick of the user that will buy the song
      * @param nameAudios Is the name of the song to buy
@@ -376,10 +376,10 @@ public class Controller {
     }
 
     /**
-     * <b>totalplaybackGanres</b><br>
-     * This method shows the total playback of the genres.<br>
-     * <b>pre:</b> The genres must be played<br>
-     * <b>post:</b> The total playback of the genres is found<br>
+     * totalplaybackGanres
+     * This method shows the total playback of the genres.
+     * pre: The genres must be played
+     * post: The total playback of the genres is found
      * 
      * @return int[] This returns an array with the total playback of the genres
      */
@@ -400,10 +400,10 @@ public class Controller {
     }
 
     /**
-     * <b>mostListenedGenre</b><br>
-     * This method shows the most listened genre.<br>
-     * <b>pre:</b> The genres must be played<br>
-     * <b>post:</b> The most listened genre is found and shown<br>
+     * mostListenedGenre
+     * This method shows the most listened genre.
+     * pre: The genres must be played
+     * post: The most listened genre is found and shown
      * 
      * @return String This returns a message that shows the most listened genre
      */
@@ -437,10 +437,10 @@ public class Controller {
     }
 
     /**
-     * <b>mostListenedGenre</b><br>
-     * This method shows the most listened genre for an especific user.<br>
-     * <b>pre:</b> The genres must be played<br>
-     * <b>post:</b> The most listened genre is found and shown<br>
+     * mostListenedGenre
+     * This method shows the most listened genre for an especific user.
+     * pre: The genres must be played
+     * post: The most listened genre is found and shown
      * 
      * @param nick Is the nick of the user to search
      * @return String This returns a message that shows the most listened genre
@@ -462,10 +462,10 @@ public class Controller {
     }
 
     /**
-     * <b>totalplaybackCategory</b><br>
-     * This method shows the total playback of the categories.<br>
-     * <b>pre:</b> The categories must be played<br>
-     * <b>post:</b> The total playback of the categories is found<br>
+     * totalplaybackCategory
+     * This method shows the total playback of the categories.
+     * pre: The categories must be played
+     * post: The total playback of the categories is found
      * 
      * @return int[] This returns an array with the total playback of the categories
      */
@@ -483,10 +483,10 @@ public class Controller {
     }
 
     /**
-     * <b>mostListenedCategory</b><br>
-     * This method shows the most listened category.<br>
-     * <b>pre:</b> The categories must be played<br>
-     * <b>post:</b> The most listened category is found and shown<br>
+     * mostListenedCategory
+     * This method shows the most listened category.
+     * pre: The categories must be played
+     * post: The most listened category is found and shown
      * 
      * @return String This returns a message that shows the most listened category
      */
@@ -505,7 +505,7 @@ public class Controller {
             }
         }
         switch (pos) {
-            case 0:msg = "The most listened category is: Policy, with a total of " + max + " plays";
+            case 0:msg = "The most listened category is: Politics, with a total of " + max + " plays";
                 break;
             case 1:msg = "The most listened category is: Entertainment, with a total of " + max + " plays";
                 break;
@@ -520,10 +520,10 @@ public class Controller {
     }
 
     /**
-     * <b>mostListenedCategory</b><br>
-     * This method shows the most listened category for an especific user.<br>
-     * <b>pre:</b> The categories must be played<br>
-     * <b>post:</b> The most listened category is found and shown<br>
+     * mostListenedCategory
+     * This method shows the most listened category for an especific user.
+     * pre: The categories must be played
+     * post: The most listened category is found and shown
      * 
      * @param nick Is the nick of the user to search
      * @return String This returns a message that shows the most listened category
@@ -545,10 +545,10 @@ public class Controller {
     }
 
     /**
-     * <b>showTotalPlaybackSongs</b><br>
-     * This method shows the total playback of the songs.<br>
-     * <b>pre:</b> The songs must be played<br>
-     * <b>post:</b> The total playback of the songs is found<br>
+     * showTotalPlaybackSongs
+     * This method shows the total playback of the songs.
+     * pre: The songs must be played
+     * post: The total playback of the songs is found
      * 
      * @return String This returns a message that shows the total playback of the
      *         songs
@@ -572,10 +572,10 @@ public class Controller {
     }
 
     /**
-     * <b>showTotalPlaybackPodcasts</b><br>
-     * This method shows the total playback of the podcasts.<br>
-     * <b>pre:</b> The podcasts must be played<br>
-     * <b>post:</b> The total playback of the podcasts is found<br>
+     * showTotalPlaybackPodcasts
+     * This method shows the total playback of the podcasts.
+     * pre: The podcasts must be played
+     * post: The total playback of the podcasts is found
      * 
      * @return String This returns a message that shows the total playback of the
      *         podcasts
@@ -598,10 +598,10 @@ public class Controller {
     }
 
     /**
-     * <b>editPlaylist</b><br>
-     * This method edits the name of a playlist.<br>
-     * <b>pre:</b> The playlist must exist<br>
-     * <b>post:</b> The name of the playlist is edited<br>
+     * editPlaylist
+     * This method edits the name of a playlist.
+     * pre: The playlist must exist
+     * post: The name of the playlist is edited
      * 
      * @param nick This is the nick of the consumer that owns the playlist
      * @param name     This is the name of the playlist to edit
@@ -626,10 +626,10 @@ public class Controller {
     }
 
     /**
-     * <b>removeAudioFromPlaylist</b><br>
-     * This method removes an audio from a playlist.<br>
-     * <b>pre:</b> The playlist must exist<br>
-     * <b>post:</b> The audio is removed from the playlist<br>
+     * removeAudioFromPlaylist
+     * This method removes an audio from a playlist.
+     * pre: The playlist must exist
+     * post: The audio is removed from the playlist
      * 
      * @param name     This is the name of the playlist
      * @param nick This is the nick of the consumer that owns the playlist
@@ -656,10 +656,10 @@ public class Controller {
     }
 
     /**
-     * <b>sharePlaylist</b><br>
-     * This method shares a playlist with another user.<br>
-     * <b>pre:</b> The playlist must exist<br>
-     * <b>post:</b> The playlist is shared with another user<br>
+     * sharePlaylist
+     * This method shares a playlist with another user.
+     * pre: The playlist must exist
+     * post: The playlist is shared with another user
      * 
      * @param nick This is the nick of the consumer that owns the playlist
      * @param name     This is the name of the playlist
@@ -682,10 +682,10 @@ public class Controller {
     }
 
     /**
-     * <b>top5</b><br>
-     * This method shows the top 5 of the most listened songs and podcast.<br>
-     * <b>pre:</b> The songs and podcasts must be played<br>
-     * <b>post:</b> The top 5 of the most listened songs and podcast is shown<br>
+     * top5
+     * This method shows the top 5 of the most listened songs and podcast.
+     * pre: The songs and podcasts must be played
+     * post: The top 5 of the most listened songs and podcast is shown
      * 
      * @return String This returns a message that shows the top 5 of the most
      *         listened songs and podcast
@@ -694,8 +694,8 @@ public class Controller {
         String msg = "no songs or podcasts have been listened to";
         Artist[] top5A = new Artist[5];
         ContentCreator[] top5C = new ContentCreator[5];
-        ArrayList<Artist> artists = new ArrayList<Artist>();
-        ArrayList<ContentCreator> contentCreators = new ArrayList<ContentCreator>();
+        ArrayList<Artist> artists = new ArrayList<>();
+        ArrayList<ContentCreator> contentCreators = new ArrayList<>();
         for (int i = 0; i < users.size(); i++) {
             if (users.get(i) instanceof Artist) {
                 artists.add((Artist) users.get(i));
@@ -766,10 +766,10 @@ public class Controller {
     }
 
     /**
-     * <b>top10</b><br>
-     * This method shows the top 10 of the most artist and content creator.<br>
-     * <b>pre:</b> The artist and content creator must be created<br>
-     * <b>post:</b> The top 10 of the most artist and content creator is shown<br>
+     * top10
+     * This method shows the top 10 of the most artist and content creator.
+     * pre: The artist and content creator must be created
+     * post: The top 10 of the most artist and content creator is shown
      * 
      * @return String This returns a message that shows the top 10 of the most
      *         artist and content creator.
@@ -778,8 +778,8 @@ public class Controller {
         String msg = "no songs or podcasts have been listened to";
         Song[] top10A = new Song[10];
         Podcast[] top10P = new Podcast[10];
-        ArrayList<Song> songs = new ArrayList<Song>();
-        ArrayList<Podcast> podcasts = new ArrayList<Podcast>();
+        ArrayList<Song> songs = new ArrayList<>();
+        ArrayList<Podcast> podcasts = new ArrayList<>();
         for (int i = 0; i < audios.size(); i++) {
             if (audios.get(i) instanceof Song) {
                 songs.add((Song) audios.get(i));
@@ -852,10 +852,10 @@ public class Controller {
     }
 
     /**
-     * <b>reportByGenre</b><br>
-     * This method shows the report by genre.<br>
-     * <b>pre:</b> The songs must be created<br>
-     * <b>post:</b> The report by genre is shown<br>
+     * reportByGenre
+     * This method shows the report by genre.
+     * pre: The songs must be created
+     * post: The report by genre is shown
      * 
      * @param genre The genre of the song
      * @return String This returns a message that shows the report by genre.
@@ -880,10 +880,10 @@ public class Controller {
     }
 
     /**
-     * <b>mostSoldSong</b><br>
-     * This method shows the most sold song.<br>
-     * <b>pre:</b> The songs must be created<br>
-     * <b>post:</b> The most sold song is shown<br>
+     * mostSoldSong
+     * This method shows the most sold song.
+     * pre: The songs must be created
+     * post: The most sold song is shown
      * 
      * @return String This returns a message that shows the most sold song.
      */
@@ -910,15 +910,10 @@ public class Controller {
     }
 
     /**
-     * <b>toSeconds</b><br>
-     * This method converts a time in seconds.<br>
-     * <b>pre:</b> time must be in the format hh:mm:ss<br>
-     * <b>post:</b> time in seconds<br>
-     * 
-     * @param h is hours
-     * @param m is minutes
-     * @param s is seconds
-     * @return int This returns the time in seconds
+     * toSeconds
+     * This method converts a time in seconds.
+     * pre: time must be in the format hh:mm:ss
+     * post: time in seconds
      */
     public int toSeconds(int h, int m, int s) {
         int seconds = 0;

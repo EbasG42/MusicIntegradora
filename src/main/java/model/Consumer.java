@@ -8,16 +8,16 @@ public abstract class Consumer extends User {
 
     public Consumer(String nick, String id) {
         super(nick, id);
-        playlists = new ArrayList<Playlist>();
-        shops = new ArrayList<Shop>();
-        playbacks = new ArrayList<Playback>();
+        playlists = new ArrayList<>();
+        shops = new ArrayList<>();
+        playbacks = new ArrayList<>();
     }
 
     /**
-     * <b>playAudio</b><br>
-     *  allows to play an audio.<br>
-     * <b>pre:</b> the audio must be already created.<br>
-     * <b>post:</b> the audio will be played.<br>
+     * playAudio
+     *  allows to play an audio.
+     * pre: the audio must be already created.
+     * post: the audio will be played.
      * @param audio is the audio that will be played.
      * @return String the message that indicates if the audio was played.
      */
@@ -36,10 +36,10 @@ public abstract class Consumer extends User {
     }
 
     /**
-     * <b>mostHearedGenre</b><br>
-     * allows to get the most heared genre.<br>
-     * <b>pre:</b> the playbacks must be already created.<br>
-     * <b>post:</b> the most heared genre will be returned.<br>
+     * mostHearedGenre
+     * allows to get the most heared genre.
+     * pre: the playbacks must be already created.
+     * post: the most heared genre will be returned.
      * @return String the most heared genre.
      */
     public String mostHearedGenre() {
@@ -71,10 +71,10 @@ public abstract class Consumer extends User {
     }
 
     /**
-     * <b>playbackPerGenre</b><br>
-     * allows to get the number of playbacks per genre.<br>
-     * <b>pre:</b> the playbacks must be already created.<br>
-     * <b>post:</b> the number of playbacks per genre will be returned.<br>
+     * playbackPerGenre
+     * allows to get the number of playbacks per genre.
+     * pre: the playbacks must be already created.
+     * post: the number of playbacks per genre will be returned.
      * @return int[] the number of playbacks per genre.
      */
     public int[] playbackPerGenre() {
@@ -103,10 +103,10 @@ public abstract class Consumer extends User {
     }
 
     /**
-     * <b>mostHearedCategory</b><br>
-     * allows to get the most heared category.<br>
-     * <b>pre:</b> the playbacks must be already created.<br>
-     * <b>post:</b> the most heared category will be returned.<br>
+     * mostHearedCategory
+     * allows to get the most heared category.
+     * pre: the playbacks must be already created.
+     * post: the most heared category will be returned.
      * 
      * @return String the most heared category.
      */
@@ -124,7 +124,7 @@ public abstract class Consumer extends User {
         }
         switch (pos) {
             case 0:
-                msg = "The most heared genre is: Policy, with " + max + " plays.";
+                msg = "The most heared genre is: Politics, with " + max + " plays.";
                 break;
             case 1:
                 msg = "The most heared genre is: Entertainment, with " + max + " plays.";
@@ -148,7 +148,7 @@ public abstract class Consumer extends User {
             if (playbacks.get(i).getAudio() instanceof Podcast) {
                 Podcast p = (Podcast) playbacks.get(i).getAudio();
                 switch (p.getCategory()) {
-                    case POLICY:
+                    case POLITICS:
                         playbacksC[0] += playbacks.get(i).getPlayback();
                         break;
                     case ENTERTAINMENT:
@@ -170,11 +170,12 @@ public abstract class Consumer extends User {
 
 
     /**
-     * <b>searchPlayback</b><br>
-     * allows to search a playback.<br>
-     * <b>pre:</b> the playbacks must be already created.<br>
-     * <b>post:</b> the playback will be returned.<br>
-     * @param name is the name of the audio that will be searched.
+     * searchPlayback
+     * allows to search a playback.
+     * pre: the playbacks must be already created.
+     * post: the playback will be returned.
+     * @param name is the name of the audio that will be searche
+     * @return d.
      */
     public Playback searchPlayback(String name) {
         Playback obj = null;
@@ -187,63 +188,14 @@ public abstract class Consumer extends User {
         }
         return obj;
     }
-
-    /**
-     * <b>addPlaylist</b><br>
-     *  allows to add a playlist.<br>
-     * <b>pre:</b> the playlists must be already created.<br>
-     * <b>post:</b> the playlist will be added.<br>
-     * 
-     * @param name is the playlist's name.
-     * @return String the message of the operation.
-     */
     public abstract String addPlaylist(String name);
 
-    /**
-     * <b>addAudioToPlaylist</b><br>
-     *  allows to add an audio to a playlist.<br>
-     * <b>pre:</b> the playlists must be already created.<br>
-     * <b>post:</b> the audio will be added to the playlist.<br>
-     * 
-     * @param name  is the playlist's name.
-     * @param audio is the audio to be added.
-     * @return String the message of the operation.
-     */
     public abstract String addAudioToPlaylist(String name, Audio audio);
 
-    /**
-     * <b>editPlaylist</b> <br>
-     * allows to edit a playlist's name.<br>
-     * <b>pre:</b> the playlists must be already created.<br>
-     * <b>post:</b> the playlist's name will be edited.<br>
-     * 
-     * @param name    is the playlist's name.
-     * @param newName is the new playlist's name.
-     * @return String the message of the operation.
-     */
     public abstract String editPlaylist(String name, String newName);
 
-    /**
-     * <b>removeAudioFromPlaylist</b><br>
-     *  allows to remove an audio from a playlist.<br>
-     * <b>pre:</b> the playlists must be already created.<br>
-     * <b>post:</b> the audio will be removed from the playlist.<br>
-     * 
-     * @param name  is the playlist's name.
-     * @param audio is the audio to be removed.
-     * @return String the message of the operation.
-     */
     public abstract String removeAudioFromPlaylist(String name, Audio audio);
 
-    /**
-     * <b>sharePlaylist</b><br>
-     *  allows to share a playlist.<br>
-     * <b>pre:</b> the playlists must be already created.<br>
-     * <b>post:</b> the playlist will be shared.<br>
-     * 
-     * @param name is the playlist's name.
-     * @return String the message of the operation.
-     */
     public abstract String sharePlaylist(String name);
 
     public ArrayList<Playlist> getPlaylists() {

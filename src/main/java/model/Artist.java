@@ -6,11 +6,11 @@ public class Artist extends Productor {
 
     public Artist(String nick, String id, String name, String url) {
         super(nick, id, name, url);
-        songs = new ArrayList<Song>();
+        songs = new ArrayList<>();
     }
 
     /**
-     * <b>addAudio</b> allows to add a song to the artist's list of songs.
+     * addAudio allows to add a song to the artist's list of songs.
      * 
      * @param audio is the song to be added.
      * @return String the message that indicates if the song was added successfully
@@ -18,7 +18,7 @@ public class Artist extends Productor {
      */
     public String addAudio(Audio audio) {
 
-        String msg = "The was added successfully";
+        String msg = "The audio was added successfully";
         Audio obj = searchAudio(audio.getName());
         if (obj == null) {
             songs.add((Song) audio);
@@ -30,7 +30,7 @@ public class Artist extends Productor {
     }
 
     /**
-     * <b>searchAudio</b> allows to search an audio in the artist's list of audios.
+     * searchAudio allows to search an audio in the artist's list of audios.
      * 
      * @param name is the name of the audio to be searched.
      * @return Audio the audio that was searched.

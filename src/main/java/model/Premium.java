@@ -6,7 +6,7 @@ public class Premium extends Consumer {
     private ArrayList<Playlist> playlists;
 
     /**
-     * <b>Constructor</b> allows to create a Premium's object.
+     * Constructor allows to create a Premium's object.
      * 
      * @param nick is the user's nick.
      * @param id is the user's identification number.
@@ -14,15 +14,15 @@ public class Premium extends Consumer {
     public Premium(String nick, String id) {
         super(nick, id);
 
-        songs = new ArrayList<Shop>();
-        playlists = new ArrayList<Playlist>();
+        songs = new ArrayList<>();
+        playlists = new ArrayList<>();
     }
 
     /**
-     * <b>addAudio</b><br>
-     * allows to add an audio to the user's list of audios.<br>
-     * <b>pre:</b> the audio must be not added before.<br>
-     * <b>post:</b> the audio will be added to the user's list of audios.<br>
+     * addAudio
+     * allows to add an audio to the user's list of audios.
+     * pre: the audio must be not added before.
+     * post: the audio will be added to the user's list of audios.
      * 
      * @param audio is the audio to be added.
      * @return String the message that indicates if the audio was added successfully
@@ -48,10 +48,10 @@ public class Premium extends Consumer {
     }
 
     /**
-     * <b>searchAudio</b><br>
-     * allows to search a song by its name.<br>
-     * <b>pre:</b> the song must be already created.<br>
-     * <b>post:</b> the song will be searched.<br>
+     * searchAudio
+     * allows to search a song by its name.
+     * pre: the song must be already created.
+     * post: the song will be searched.
      * @param name is the name of the song to be searched.
      * @return Shop the shop that contains the song.
      */
@@ -69,10 +69,10 @@ public class Premium extends Consumer {
     }
 
     /**
-     * <b>addPlaylist</b><br>
-     * allows to add a playlist to the user's list of playlists.<br>
-     * <b>pre:</b> the playlist must be not added before.<br>
-     * <b>post:</b> the playlist will be added to the user's list of playlists.<br>
+     * addPlaylist
+     * allows to add a playlist to the user's list of playlists.
+     * pre: the playlist must be not added before.
+     * post: the playlist will be added to the user's list of playlists.
      * 
      * @param name is the name of the playlist to be added.
      * @return String the message that indicates if the playlist was added
@@ -92,10 +92,10 @@ public class Premium extends Consumer {
     }
 
     /**
-     * <b>addAudioToPlaylist</b><br>
-     * allows to add an audio to a playlist.<br>
-     * <b>pre:</b> the audio must be already created.<br>
-     * <b>post:</b> the audio will be added to the playlist.<br>
+     * addAudioToPlaylist
+     * allows to add an audio to a playlist.
+     * pre: the audio must be already created.
+     * post: the audio will be added to the playlist.
      * 
      * @param name  is the name of the playlist.
      * @param audio is the audio to be added.
@@ -117,10 +117,10 @@ public class Premium extends Consumer {
     }
 
     /**
-     * <b>searchPlaylist</b><br>
-     * allows to search a playlist by its name.<br>
-     * <b>pre:</b> the playlist must be already created.<br>
-     * <b>post:</b> the playlist will be searched.<br>
+     * searchPlaylist
+     * allows to search a playlist by its name.
+     * pre: the playlist must be already created.
+     * post: the playlist will be searched.
      * 
      * @param name is the name of the playlist to be searched.
      * @return PlayList the playlist found.
@@ -143,10 +143,10 @@ public class Premium extends Consumer {
     }
 
     /**
-     * <b>editPlaylist</b><br>
-     * allows to change the name of a playlist.<br>
-     * <b>pre:</b> the playlist must be already created.<br>
-     * <b>post:</b> the playlist will be edited.<br>
+     * editPlaylist
+     * allows to change the name of a playlist.
+     * pre: the playlist must be already created.
+     * post: the playlist will be edited.
      * 
      * @param name    is the name of the playlist to be edited.
      * @param newName is the new name of the playlist.
@@ -168,10 +168,10 @@ public class Premium extends Consumer {
     }
 
     /**
-     * <b>removeAudioFromPlaylist</b><br>
-     * allows to remove an audio from a playlist.<br>
-     * <b>pre:</b> the audio must be already created.<br>
-     * <b>post:</b> the audio will be removed from the playlist.<br>
+     * removeAudioFromPlaylist
+     * allows to remove an audio from a playlist.
+     * pre: the audio must be already created.
+     * post: the audio will be removed from the playlist.
      * 
      * @param name  is the name of the playlist.
      * @param audio is the audio to be removed.
@@ -193,10 +193,10 @@ public class Premium extends Consumer {
     }
 
     /**
-     * <b>sharePlaylist</b><br>
-     * allows to share a playlist with another user.<br>
-     * <b>pre:</b> the playlist must be already created.<br>
-     * <b>post:</b> the playlist will be shared.<br>
+     * sharePlaylist
+     * allows to share a playlist with another user.
+     * pre: the playlist must be already created.
+     * post: the playlist will be shared.
      * 
      * @param name is the name of the playlist.
      * @return String the message that indicates if the playlist was shared

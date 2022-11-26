@@ -2,8 +2,8 @@ package model;
 import java.util.Random;
 public class Estandar extends Consumer {
 
-    public static final int MAX_AUDIOS = 100;
-    public static final int MAX_PLAYLISTS = 20;
+    public static final int MAXAUDIOS = 100;
+    public static final int MAXPLAYLIST = 20;
     public static Random random = new Random();
     private int currentPlaybacks;
 
@@ -13,14 +13,13 @@ public class Estandar extends Consumer {
     }
 
     /**
-     * <b>addAudio</b><br>
-     * allows to add an audio to the user's list of audios.<br>
-     * <b>pre:</b> the audio must be already created.<br>
-     * <b>post:</b> the audio will be added to the user's list of audios.<br>
+     * addAudio
+     * to add an audio to the user's array of audios.
+     * pre: the audio must be already created.
+     * post: the audio will be added to the user's array of audios.
      * 
-     * @param audio is the audio to be added.
-     * @return String the message that indicates if the audio was added successfully
-     *         or not.
+     * @param audio audio to be added.
+     * @return String a message that indicates if the audio was added successfully or not.
      */
     public String addAudio(Audio audio) {
         String msg = "";
@@ -49,10 +48,10 @@ public class Estandar extends Consumer {
     }
 
     /**
-     * <b>addPlaylist</b><br>
-     * allows to add a playlist to the user's list of playlists.<br>
-     * <b>pre:</b> the playlist must not exist.<br>
-     * <b>post:</b> the playlist will be added to the user's list of playlists.<br>
+     * addPlaylist
+     * allows to add a playlist to the user's array of playlists.
+     * pre: the playlist dont exist.
+     * post: the playlist will be added to the user's array of playlists.
      * 
      * @param name is the name of the playlist to be added.
      * @return String the message that indicates if the playlist was added
@@ -84,10 +83,10 @@ public class Estandar extends Consumer {
     }
 
     /**
-     * <b>addAudioToPlaylist</b><br>
-     * allows to add an audio to a playlist.<br>
-     * <b>pre:</b> the audio and the playlist must be already created.<br>
-     * <b>post:</b> the audio will be added to the playlist.<br>
+     * addAudioToPlaylist
+     * allows to add an audio to a playlist.
+     * pre: the audio and the playlist must be already created.
+     * post: the audio will be added to the playlist.
      * 
      * @param name  is the name of the playlist.
      * @param audio is the audio to be added.
@@ -97,25 +96,25 @@ public class Estandar extends Consumer {
     @Override
     public String addAudioToPlaylist(String name, Audio audio) {
 
-        String msg = "The audio was added succesfully";
+        String msg = "The audio have been added succesfully";
         Playlist obj = searchPlaylist(name);
         if (obj != null) {
             msg = obj.addAudio(audio);
         } else {
-            msg = "The playlist does not exist";
+            msg = "The playlist does´nt exist";
         }
 
         return msg;
     }
 
     /**
-     * <b>searchPlaylist</b><br>
-     * allows to search a playlist by its name.<br>
-     * <b>pre:</b> the playlist must be already created.<br>
-     * <b>post:</b> the playlist will be searched.<br>
+     * searchPlaylist
+     * allows to search a playlist.
+     * pre: the playlist must be already created.
+     * post: the playlist will be searched.
      * 
      * @param name is the name of the playlist to be searched.
-     * @return PlayList the playlist found.
+     * @return if the playlist found or not.
      */
     public Playlist searchPlaylist(String name) {
 
@@ -133,26 +132,26 @@ public class Estandar extends Consumer {
     }
 
     /**
-     * <b>isAvailablePlaylist</b><br>
-     * allows to know if the user can add more playlists.<br>
-     * <b>pre:</b> the playlist list must exist.<br>
-     * <b>post:</b> the availability has been found.<br>
+     * isAvailablePlaylist
+     * allows to know if the user can add more playlists.
+     * pre: the playlist list must exist.
+     * post: the availability has been found.
      * 
      * @return boolean true if can, false if not.
      */
     public boolean isAvailablePlaylist() {
         boolean available = false;
-        if (super.getPlaylists().size() < MAX_PLAYLISTS) {
+        if (super.getPlaylists().size() < MAXPLAYLIST) {
             available = true;
         }
         return available;
     }
 
     /**
-     * <b>searchAudio</b><br>
-     * allows to search an audio by its name.<br>
-     * <b>pre:</b> the shop list must be already created.<br>
-     * <b>post:</b> the audio will be searched.<br>
+     * searchAudio
+     * allows to search an audio by its name.
+     * pre: the shop list must be already created.
+     * post: the audio will be searched.
      * 
      * @param name is the name of the audio to be searched.
      * @return Audio the audio found.
@@ -171,26 +170,26 @@ public class Estandar extends Consumer {
     }
 
     /**
-     * <b>isAvailableSong</b><br>
-     *  allows to know if the user can add more audios.<br>
-     * <b>pre:</b> the shop list must exist.<br>
-     * <b>post:</b> the availability has been found.<br>
+     * isAvailableSong
+     *  allows to know if the user can add more audios.
+     * pre: the shop list must exist.
+     * post: the availability has been found.
      * 
      * @return boolean true if can, false if not.
      */
     public boolean isAvailableSong() {
         boolean available = false;
-        if (super.getShops().size() < MAX_AUDIOS) {
+        if (super.getShops().size() < MAXAUDIOS) {
             available = true;
         }
         return available;
     }
 
     /**
-     * <b>editPlaylist</b><br>
-     * allows to edit a playlist.<br>
-     * <b>pre:</b> the playlist must be already created.<br>
-     * <b>post:</b> the playlist will be edited.<br>
+     * editPlaylist
+     * allows to edit a playlist.
+     * pre: the playlist must be already created.
+     * post: the playlist will be edited.
      * 
      * @param name    is the name of the playlist to be edited.
      * @param newName is the new name of the playlist.
@@ -211,10 +210,10 @@ public class Estandar extends Consumer {
 
 
     /**
-     * <b>removeAudioFromPlaylist</b><br>
-     * allows to remove an audio from a playlist.<br>
-     * <b>pre:</b> the audio and the playlist must be already created.<br>
-     * <b>post:</b> the audio will be removed from the playlist.<br>
+     * removeAudioFromPlaylist
+     * allows to remove an audio from a playlist.
+     * pre: the audio and the playlist must be already created.
+     * post: the audio will be removed from the playlist.
      * 
      * @param name  is the name of the playlist.
      * @param audio is the audio to be removed.
@@ -234,10 +233,10 @@ public class Estandar extends Consumer {
     }
 
     /**
-     * <b>sharePlaylist</b><br>
-     * allows to share a playlist with another user.<br>
-     * <b>pre:</b> the playlist must be already created.<br>
-     * <b>post:</b> the playlist will be shared.<br>
+     * sharePlaylist
+     * allows to share a playlist with another user.
+     * pre: the playlist must be already created.
+     * post: the playlist will be shared.
      * 
      * @param name is the name of the playlist.
      * @return String the message that indicates if the playlist was shared
@@ -256,10 +255,10 @@ public class Estandar extends Consumer {
     }
 
     /**
-     * <b>songAd</b><br>
-     * allows to know if an add will be played.<br>
-     * <b>pre:</b> the shop list must be already created.<br>
-     * <b>post:</b> the instruction about the ad will be give.<br>
+     * songAd
+     * allows to know if an add will be played.
+     * pre: the shop list must be already created.
+     * post: the instruction about the ad will be give.
      * @return boolean true if an add will be played, false if not.
      */
     public boolean songAd(){

@@ -14,15 +14,37 @@ public class Playlist {
     
     public Playlist(String name) {
         this.name = name;
-        audioList = new ArrayList<Audio>();
+        audioList = new ArrayList<>();
         matriz = new int[6][6];
         generateMatrizCode();
         songAmount = 0;
         podcastAmount = 0;
     }
+public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public ArrayList<Audio> getAudioList() {
+        return audioList;
+    }
+
+    public void setAudioList(ArrayList<Audio> audioList) {
+        this.audioList = audioList;
+    }
+
+    public int[][] getCode() {
+        return matriz;
+    }
+    public void setCode(int[][] code) {
+        this.matriz = code;
+    }
 
     /**
-     * <b>generateMatrizCode</b> allows to generate a random code.
+     * generateMatrizCode allows to generate a random code.
      */
     public void generateMatrizCode() {
         for (int i = 0; i < 6; i++) {
@@ -34,7 +56,7 @@ public class Playlist {
     }
 
     /**
-     * <b>generateCode</b> allows to generate a code based on the matriz code.
+     * generateCode allows to generate a code based on the matriz code.
      */
     public void generateCode() {
         String id1 = "";
@@ -83,7 +105,7 @@ public class Playlist {
     }
 
     /**
-     * <b>share</b> allows to share the playlist.
+     * share allows to share the playlist.
      * 
      * @return String the playlist's code.
      */
@@ -106,7 +128,7 @@ public class Playlist {
     }
 
     /**
-     * <b>addAudio</b> allows to add an audio to the playlist.
+     * addAudio allows to add an audio to the playlist.
      * 
      * @param audio is the audio to be added.
      * @return String the message that indicates if the audio was added successfully
@@ -133,7 +155,7 @@ public class Playlist {
     }
 
     /**
-     * <b>searchAudio</b> allows to search an audio in the playlist.
+     * searchAudio allows to search an audio in the playlist.
      * 
      * @param name is the name of the audio to be searched.
      * @return Audio the audio that was searched.
@@ -154,7 +176,7 @@ public class Playlist {
     }
 
     /**
-     * <b>showAudios</b><br>
+     * showAudios
      * allows to show the audios in the playlist.
      * 
      * @return String the audios in the playlist.
@@ -168,7 +190,7 @@ public class Playlist {
     }
 
     /**
-     * <b>removeAudio</b> <br>
+     * removeAudio 
      * allows to remove an audio from the playlist.
      * 
      * @param audio is the audio to be removed.
@@ -187,27 +209,5 @@ public class Playlist {
         return msg;
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public ArrayList<Audio> getAudioList() {
-        return audioList;
-    }
-
-    public void setAudioList(ArrayList<Audio> audioList) {
-        this.audioList = audioList;
-    }
-
-    public int[][] getCode() {
-        return matriz;
-    }
-    public void setCode(int[][] code) {
-        this.matriz = code;
-    }
-
+    
 }
